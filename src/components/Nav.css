@@ -19,6 +19,7 @@
 }
 
 .search {
+    margin-left: 15%;
     padding: 0 16px;
     width: 252px;
     height: 36px;
@@ -36,6 +37,7 @@
 }
 .magnifier {
     opacity: 0.4;
+    margin-right: 5px;
 }
 .xButton {
     width: 20px;
