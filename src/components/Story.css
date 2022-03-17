@@ -1,0 +1,51 @@
+.story_back {
+    display: flex;
+}
+.story_box {
+    width: 592px;
+    height: 85px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    background-color: white;
+    padding: 16px 10px;
+    margin: 0 0 24px;
+    display: flex;
+    align-items: center;
+    
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.story {
+    font-size: 12px;
+    margin: 0 10px;
+    text-align: center;
+}
+.profile_img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    background-color: rgb(199, 199, 199);
+}
+
+
+.arrow {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 11px;
+}
+.arrow:hover {
+    cursor: pointer;
+}
+.left {
+    top: 50px;
+    left: 23px;
+}
+.right {
+    top: 50px;
+    right: 23px;
+}
+

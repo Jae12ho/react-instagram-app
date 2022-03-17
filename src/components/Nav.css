@@ -35,6 +35,9 @@
 .search:hover {
     cursor: text;
 }
+.outline-none {
+    outline: none;
+}
 .magnifier {
     opacity: 0.4;
     margin-right: 5px;
@@ -50,8 +53,99 @@
     justify-content: space-around;
     align-items: center;
 }
+.itemBox:hover {
+    cursor: pointer;
+}
 .item {
     width: 24px;
     height: 24px;
     padding: 0px 10px;
+}
+
+/* 여기부터 Dropdwon */
+.menu-container {
+    position: relative;
+}
+
+.menu {
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    z-index: 100;
+    font-size: 14px;
+  }
+  
+  .menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* 여기까지 공통 dropdown style */
+
+  /* 프로필 드롭다운 */
+  .profile-dropdown li {
+    width: 230px;
+    height: 37px;
+  }
+  
+  .profile-dropdown li a {
+    text-decoration: none;
+    color: #333333;
+    padding: 8px 16px;
+    display: block;
+  }
+
+/* 하트 버튼 드롭다운 */
+.menu-title {
+    margin-left: 8px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+.heart-dropdown {
+    height: 367px;
+    overflow-y: scroll;
+}
+.heart-dropdown li {
+    width: 451px;
+    height: 44px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heart-dropdown button {
+    border: rgb(196, 196, 196) solid 1px;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px 9px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.follower-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: rgb(207, 207, 207);
+}
+
+/* 검색 드롭다운 */
+.search-dropdown {
+    width: 375px;
+    height: 362px;
+}
+.search .menu {
+    
 }
