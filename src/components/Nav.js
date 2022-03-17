@@ -49,7 +49,7 @@ function Nav() {
         {
           isClicked ? 
           <div className="menu-container">
-            <input className="search outline-none" placeholder="검색" value={searchText}  onChange={onChangeSearch} autoFocus />
+            <input className="search outline-none" placeholder="검색" value={searchText} onBlur={searchClick} onChange={onChangeSearch} autoFocus />
             <div className="menu active">
               <ul className="search-dropdown">
                 <h3 className="menu-title">최근 검색 항목</h3>
