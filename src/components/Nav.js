@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import Modal from './Modal';
 import "./Nav.css"
 
-function Nav() {
+function Nav({ truncate }) {
   const [isClicked, setIsClicked] = useState(false); // 검색창
   const [searchText, setSearchText] = useState("");
   const [modalOpen, setModalOpen] = useState(false); // 모달
@@ -28,12 +28,6 @@ function Nav() {
   const DropdwonClick = (e) => {
     e.target.parentNode.childNodes[1].className = `${e.target.parentNode.childNodes[1].className == "menu" ? "menu active" : "menu"}`;
   };
-
-
-  // 글자 길이 잘라주는 함수
-  const truncate = (str, n) => {
-    return str?.length > n ? str.substr(0, n-1) + "..." : str
-  }
 
   return (
     <nav className="Nav">

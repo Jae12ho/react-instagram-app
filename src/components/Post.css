@@ -1,0 +1,66 @@
+.post-box {
+    width: 610px;
+    margin: 0px 22px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+.post-title {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+}
+.post-title-profile-img {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 16px;
+}
+.post-title-username {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.post-img {
+    background-color: antiquewhite;
+    height: 610px;
+}
+
+.post-like {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 9px;
+}
+.post-like-item > img{
+    margin: 0px 7px;
+}
+.post-comment {
+    padding-bottom: 15px;
+}
+
+.post-comment-comment {
+    padding-left: 16px;
+}
+
+.post-comment-input {
+    padding: 6px 16px;
+    height: 41px;
+    width: 578px;
+    border-top: 1px solid rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+}
+.post-comment-input > input {
+    border: none;
+    outline: none;
+}
+.hover {
+    cursor: pointer;
+}

@@ -2,6 +2,9 @@
     width: 100%;
     height: 60px;
     border-bottom: rgb(219, 219, 219) 1px solid;
+    position: fixed;
+    background-color: white;
+    z-index: 5000;
 }
 .NavBar {
     margin: auto;

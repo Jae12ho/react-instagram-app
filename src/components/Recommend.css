@@ -1,0 +1,53 @@
+.font-12 {
+    font-size: 12px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-bold {
+    font-weight: bold;
+}
+.color-gray {
+    color: gray;
+}
+.recommend {
+    /* position: fixed;
+    left: 850px; */
+}
+.my-info {
+    display: flex;
+    align-items: center;
+}
+.my-profile-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: rgb(196, 196, 196);
+}
+.recommend-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 16px;
+}
+.recommend-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 261px;
+    padding: 8px 16px;
+}
+.profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: rgb(214, 214, 214);
+}
+.follow {
+    color: #0095F6;
+}
+
+@media (max-width: 1000px) {
+    .recommend {
+        display: none;
+    }
+}
